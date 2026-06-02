@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boxes Layout</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* 10 small boxes */
+    .small-box-container{
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .small-box{
+      width: 40px;
+      height: 40px;
+      border: 2px solid black;
+    }
+
+    /* Rectangle */
+    .rectangle{
+      width: 500px;
+      height: 100px;
+      border: 2px solid blue;
+      margin-bottom: 30px;
+    }
+
+    /* 3 boxes side by side */
+    .three-box-container{
+      display: flex;
+      gap: 15px;
+    }
+
+    .big-box{
+      width: 100px;
+      height: 100px;
+      border: 2px solid red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 10 Small Boxes -->
+  <div class="small-box-container">
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+    <div class="small-box"></div>
+  </div>
+
+  <!-- Rectangle -->
+  <div class="rectangle"></div>
+
+  <!-- 3 Boxes -->
+  <div class="three-box-container">
+    <div class="big-box"></div>
+    <div class="big-box"></div>
+    <div class="big-box"></div>
+  </div>
+
+</body>
+</html>

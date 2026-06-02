@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <style>
+        /* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f3f6;
+}
+
+/* Navbar Layout */
+.navbar {
+    background-color: #2874f0; /* Flipkart Blue */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 0;
+}
+
+.nav-container {
+    max-width: 1248px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo .logo-img {
+    width: 75px;
+}
+
+.explore-plus {
+    font-size: 11px;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.plus-color {
+    color: #ffe500;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    flex-grow: 0.6;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.search-btn {
+    border: none;
+    background: transparent;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+/* Actions */
+.login-btn {
+    background: #fff;
+    color: #2874f0;
+    font-weight: bold;
+    border: 1px solid #dbdbdb;
+    padding: 6px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Categories Section */
+.categories {
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 50px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+}
+
+.category-item {
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(to right, #1754bc, #2874f0);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 10px;
+    border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/52/44/image/d2ecfddf891a3922.png?q=60" alt="Flipkart Logo" class="logo-img">
+                <a href="#" class="explore-plus">Explore <span class="plus-color">Plus</span></a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search for products, brands and more" class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="nav-actions">
+                <button class="login-btn">Login</button>
+                <a href="#" class="nav-link">Become a Seller</a>
+                <a href="#" class="nav-link">Cart 🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Bar -->
+    <nav class="categories">
+        <div class="category-item">⚡ Top Offers</div>
+        <div class="category-item">📱 Mobiles</div>
+        <div class="category-item">💻 Electronics</div>
+        <div class="category-item">📺 Appliances</div>
+        <div class="category-item">👕 Fashion</div>
+        <div class="category-item">🏠 Home</div>
+    </nav>
+
+    <!-- Main Banner Carousel Placeholder -->
+    <section class="hero-banner">
+        <div class="banner-content">
+            <h1>Big Billion Days Are Coming!</h1>
+            <p>Up to 80% Off on Top Brands</p>
+        </div>
+    </section>
+
+</body>
+</html>
